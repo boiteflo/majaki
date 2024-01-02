@@ -21,10 +21,10 @@ const routes = [
             import ('../pages/pageSuccess.vue')
     },
     {
-        path: '/cubes',
-        name: version + ' majaki Cubes',
+        path: '/contact',
+        name: version + ' majaki COntact',
         component: () =>
-            import ('../pages/pageError.vue')
+            import ('../pages/pageContact.vue')
     },
     {
         path: '/*',

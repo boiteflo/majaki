@@ -1,14 +1,14 @@
 <template>
 <div>
-    <v-app-bar app dark color="#FF6F00" >
-      <div style="width:300px; position:absolute; bottom:0px; top:0px; left:180px; overflow: hidden;">
-        <img :style="{width:$vuetify.breakpoint.width >= 950 ? 150 + 'px' :130 + 'px', 'object-fit': 'cover'}" :src="require('../assets/header.png')"/>
+    <v-app-bar app dark color="#003A3E" >
+      <div style="width:180px; position:absolute; bottom:0px; top:5px; left:50px; overflow: hidden;">
+        <img style="width:50px; object-fit:cover" :src="require('../assets/headerLogo.png')"/>
       </div>
       <v-app-bar-nav-icon variant="text" @click="showDrawer=true"></v-app-bar-nav-icon>
       <router-link to="/">
         <v-btn
           target="_blank"
-          style="position:relative"
+          style="position:relative; margin-left:50px"
           text
           @click="unselect()"
         >
@@ -30,9 +30,10 @@
 
     </v-app-bar>
 
-      <v-navigation-drawer v-model="showDrawer" absolute temporary color="white">
-        
+      <v-navigation-drawer v-model="showDrawer" absolute temporary color="#003A3E">
+        <!--
         <img style="width:400px; height:600px; object-position: -100px 00px; object-fit:cover; position:absolute;" :src="require('../assets/menu.png')"/>
+        -->
         <br>
         <div>
           <router-link to="/">
@@ -40,18 +41,22 @@
               target="_blank"
               text
             >
-              <v-icon class="colorWhite">mdi-cards</v-icon>
-              <h3 class="colorWhite">MA JAKI - DECHETTERIE </h3>
+              <img style="width:50px; margin-top:20px; object-fit:cover" :src="require('../assets/headerLogo.png')"/>
+              <h3 class="colorWhite">MA JAKI </h3>
+              <p style="margin-top:50px; margin-left:-75px; color:#D0D0D0">DECHETTERIE</p>
             </v-btn>
           </router-link>
-          <link-button v-for="link in links" 
-            :key="'navigationDrawer' +link.Text" 
-            :url="link.Url" 
-            :external="link.external" 
-            :text="link.Text" 
-            :icon="link.Icon"
-            class="m5px w100p">
-          </link-button>
+          <div v-for="link in links" 
+            :key="'navigationDrawer' +link.Text"
+            style="margin-top:30px">
+            <link-button  
+              :url="link.Url" 
+              :external="link.external" 
+              :text="link.Text" 
+              :icon="link.Icon"
+              class="m5px w100p">
+            </link-button>
+          </div>
         </div>
       </v-navigation-drawer>
 </div>
