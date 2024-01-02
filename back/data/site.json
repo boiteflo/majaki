@@ -1,0 +1,86 @@
+[
+	{
+		"Id":"CALfd95820c-2ad8-4192-9587-c1de3c92b285",
+		"Ref":"CAL",
+        "Name":"Calais",
+		"Coordinate":"50.941157, 1.877153",
+		"Waste":["BET", "TUI", "GRA", "VER", "MAR"]
+    },
+	{
+		"Id": "PARa4512ec0-1bc9-4533-811a-3eac7f92d689",
+		"Ref": "PAR",
+		"Name": "Paris",
+		"Coordinate": "48.856613, 2.352222",
+		"Waste": ["BET","BRI","TUI","GRA","VER","TER","MAR"]
+	  },
+	  {
+		"Id": "MARc3281fb0-4dfe-4a61-8424-49db0b92e7ef",
+		"Ref": "MAR",
+		"Name": "Marseille",
+		"Coordinate": "43.296482, 5.369780",
+		"Waste": ["BET", "TUI", "GRA", "TER", "MAR"]
+	  },
+	  {
+		"Id": "LYOc1547e60-51bc-4d89-8104-3b48e7b9297d",
+		"Ref": "LYO",
+		"Name": "Lyon",
+		"Coordinate": "45.757813, 4.832011",
+		"Waste": ["BET", "BRI", "GRA", "VER", "TER"]
+	  },
+	  {
+		"Id": "TOUd9635cb0-6f93-4dd2-926c-79a06a3b0e67",
+		"Ref": "TOU",
+		"Name": "Toulouse",
+		"Coordinate": "43.604652, 1.444209",
+		"Waste": ["BET", "TUI", "GRA", "VER", "MAR"]
+	  },
+	  {
+		"Id": "NANb8526fe0-72ea-4c5d-8ff3-1b0de268c5cb",
+		"Ref": "NAN",
+		"Name": "Nantes",
+		"Coordinate": "47.218371, -1.553621",
+		"Waste": ["BET", "BRI", "TUI", "GRA", "TER"]
+	  },
+	  {
+		"Id": "BORb9582e70-8ab7-489c-a9fb-8c9c8d92f7c3",
+		"Ref": "BOR",
+		"Name": "Bordeaux",
+		"Coordinate": "44.837789, -0.579180",
+		"Waste": ["BRI", "TUI", "GRA", "VER", "TER"]
+	  },
+	  {
+		"Id": "LILa7462ca0-10e2-4d8e-8409-54f76a272f27",
+		"Ref": "LIL",
+		"Name": "Lille",
+		"Coordinate": "50.629250, 3.057256",
+		"Waste": ["BET", "BRI", "TUI", "GRA", "TER"]
+	  },
+	  {
+		"Id": "RENc5301bd0-8a37-4011-9c6a-2d19b042f64d",
+		"Ref": "REN",
+		"Name": "Rennes",
+		"Coordinate": "48.117266, -1.677792",
+		"Waste": ["BET", "BRI", "TUI", "GRA", "TER"]
+	  },
+	  {
+		"Id": "NICa1589ed0-93e5-4d2d-8411-642f6a68a5d7",
+		"Ref": "NIC",
+		"Name": "Nice",
+		"Coordinate": "43.710173, 7.261953",
+		"Waste": ["BET", "TUI", "GRA", "TER", "MAR"]
+	  },
+	  {
+		"Id": "STRa9857ca0-3d9a-4a56-8f65-8a7a7c34d2bd",
+		"Ref": "STR",
+		"Name": "Strasbourg",
+		"Coordinate": "48.573405, 7.752111",
+		"Waste": ["BET", "BRI", "TUI", "GRA", "VER"]
+	  },
+	  {
+		"Id": "MONb7420df0-4904-4f91-97e7-5226d2a3b1e1",
+		"Ref": "MON",
+		"Name": "Montpellier",
+		"Coordinate": "43.611015, 3.876733",
+		"Waste": ["BET", "BRI", "TUI", "GRA", "TER"]
+	  }
+]

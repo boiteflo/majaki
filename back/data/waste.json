@@ -1,0 +1,37 @@
+[
+	{
+		"Id":"BETa93e63bc-7b9d-4a6f-95f6-da803175a8db",
+		"Ref":"BET",
+        "Name":"Béton"
+    },
+	{
+		"Id":"BRIe5bf65f6-e666-4311-86fa-0e4e9630d974",
+		"Ref":"BRI",
+        "Name":"Brique"
+    },
+	{
+		"Id":"TUId8a2df6c-3d3d-49bd-81b0-795fdd1d40b2",
+		"Ref":"TUI",
+        "Name":"Tuile et Céramique"
+    },
+	{
+		"Id":"GRAbf3bea25-a01c-4e18-81d8-f68d7b937424",
+		"Ref":"GRA",
+        "Name":"Gravat"
+    },
+	{
+		"Id":"VER877ad582-e247-4a8d-9754-d299d656954e",
+		"Ref":"VER",
+        "Name":"Verre"
+    },
+	{
+		"Id":"TERe64af9fd-bc88-4cc2-8603-38f71697e008",
+		"Ref":"TER",
+        "Name":"Terres et cailloux"
+    },
+	{
+		"Id":"MAR97ddd97a-eebd-4fe5-844a-8b0ccf9c23bc",
+		"Ref":"MAR",
+        "Name":"Sédiments Marin"
+    }
+]
