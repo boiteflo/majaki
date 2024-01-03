@@ -1,5 +1,5 @@
 <template>
-    <div class="pageTop">
+    <div>
       
       <v-parallax :src="require('../assets/img1.jpg')" height="500">
         <div class="d-flex flex-column fill-height justify-center align-center text-white">

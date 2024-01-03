@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfront"]=self["webpackChunkfront"]||[]).push([[265],{8265:function(e,t,n){n.r(t),n.d(t,{default:function(){return o}});var s=function(){var e=this,t=e._self._c;return t("div",{staticClass:"pageTop"},[e._v(" Deposit View ")])},u=[],i={name:"pageDepositView",methods:{}},l=i,r=n(1001),a=(0,r.Z)(l,s,u,!1,null,null,null),o=a.exports}}]);
+//# sourceMappingURL=265.61840cab.js.map

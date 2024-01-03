@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfront"]=self["webpackChunkfront"]||[]).push([[65],{4065:function(t,e,n){n.r(e),n.d(e,{default:function(){return o}});var s=function(){var t=this,e=t._self._c;return e("div",{staticClass:"pageTop"},[t._v(" Deposit List ")])},u=[],i={name:"pageDepositList",methods:{}},l=i,r=n(1001),a=(0,r.Z)(l,s,u,!1,null,null,null),o=a.exports}}]);
+//# sourceMappingURL=65.d5ee7096.js.map

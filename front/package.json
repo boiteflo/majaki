@@ -11,12 +11,14 @@
     "axios": "^1.4.0",
     "core-js": "^3.8.3",
     "konami": "^1.6.3",
+    "leaflet": "^1.9.4",
     "md5": "^2.3.0",
     "rxjs": "^7.8.1",
     "seedrandom": "^3.0.5",
     "vue": "^2.6.14",
     "vue-router": "^3.6.5",
     "vue-toastr": "^2.1.2",
+    "vue2-leaflet": "^2.7.1",
     "vuetify": "^2.7.1"
   },
   "devDependencies": {

@@ -22,9 +22,45 @@ const routes = [
     },
     {
         path: '/contact',
-        name: version + ' majaki COntact',
+        name: version + ' majaki Contact',
         component: () =>
             import ('../pages/pageContact.vue')
+    },
+    {
+        path: '/depositAdd',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageDepositAdd.vue')
+    },
+    {
+        path: '/depositEdit',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageDepositEdit.vue')
+    },
+    {
+        path: '/depositList',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageDepositList.vue')
+    },
+    {
+        path: '/depositView',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageDepositView.vue')
+    },
+    {
+        path: '/login',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageLogin.vue')
+    },
+    {
+        path: '/homeLogged',
+        name: version + ' majaki Contact',
+        component: () =>
+            import ('../pages/pageHomeLogged.vue')
     },
     {
         path: '/*',
