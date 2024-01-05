@@ -74,14 +74,16 @@ import linkButton from './linkButton';
     methods:{
       getLinks(){
         let result = [ 
-          {Text: 'DEPOSER DES DECHETS', Icon: 'mdi-dump-truck', Url:'/deposit'},
-          {Text: 'NOUS CONTACTER', Icon: 'mdi-account-group', Url:'/contact'}];
+          {Text: 'DEPOSER DES DECHETS', Icon: 'mdi-dump-truck', Url:'/depositAdd'}];
         if(this.user)
           result = result.concat([
-          {Text: 'SE DECONNECTER', Icon: 'mdi-logout', Url:'/logout'},
-          {Text: this.user.Name.toUpperCase(), Icon: 'mdi-account-circle', Url:'/account'}]);
+            {Text: 'Mes DEPOTS', Icon: 'mdi-format-list-bulleted', Url:'/depositList'},
+            {Text: this.user.Name.toUpperCase(), Icon: 'mdi-account-circle', Url:'/account'},
+            {Text: 'DECONNEXION', Icon: 'mdi-logout', Url:'/logout'},]);
         else
-          result.push({Text: 'SE CONNECTER', Icon: 'mdi-login', Url:'/login'});
+          result = result.concat([
+            {Text: 'NOUS CONTACTER', Icon: 'mdi-account-group', Url:'/contact'},
+            {Text: 'SE CONNECTER', Icon: 'mdi-login', Url:'/login'}]);
         return result;
       }
     }

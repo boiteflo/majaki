@@ -29,12 +29,12 @@ import serviceBack from '../services/serviceBack'
 
 export default {
   name: 'pageLogin',
-    data: () => ({
-        store: store,
-        mail: 'banquartflorent@yopmail.com',
-        password:'test',
-        error:''
-    }),
+  data: () => ({
+      store: store,
+      mail: 'banquartflorent@yopmail.com',
+      password:'test',
+      error:''
+  }),
   methods: {
     async tryLogin(){
         this.error = "";

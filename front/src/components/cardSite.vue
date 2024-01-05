@@ -7,9 +7,9 @@
         <span class="color2"><u>Déchets acceptés</u> : </span>
         {{ site.WasteText }}
         <div v-if="actions">        
-          <div class="myd5px"><v-icon>mdi-phone</v-icon><span>{{ site.Phone }}</span></div>
-          <div class="myd5px"><v-icon>mdi-email</v-icon><span>{{ site.Mail }}</span></div>
-          <div class="myd5px"><v-icon>mdi-google-maps</v-icon><span>{{ site.Address }}</span></div>
+          <div><v-icon class="m5px">mdi-phone</v-icon><span>{{ site.Phone }}</span></div>
+          <div><v-icon class="m5px">mdi-email</v-icon><span>{{ site.Mail.toLowerCase() }}</span></div>
+          <div><v-icon class="m5px">mdi-google-maps</v-icon><span>{{ site.Address }}</span></div>
         </div>
       </v-card-text>
     </v-card>

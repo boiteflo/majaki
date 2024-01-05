@@ -51,6 +51,10 @@
     display: flex;
 }
 
+.flex-align-center {
+    align-items: center;
+}
+
 .flex-line {
     display: flex;
     align-items: stretch;
@@ -58,6 +62,10 @@
 
 .flex-grow {
     flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-item{
     flex-basis: 0;
 }
 
@@ -154,18 +162,12 @@
     padding-bottom: 0px !important;
 }
 
-.m10px {
-    margin: 10px !important;
-}
-.m5px {
-    margin: 5px !important;
-}
-.ml5px {
-    margin-left: 5px !important;
-}
-.mt0px {
-    margin-top: 0px !important;
-}
+.m10px {  margin: 10px !important;}
+.m5px { margin: 5px !important; }
+.ml5px { margin-left: 5px !important; }
+.mr5px { margin-right: 5px !important; }
+.mb5px { margin-bottom: 5px !important; }
+.mt5px { margin-top: 5px !important; }
 .mx5px {
     margin-right: 5px !important;
     margin-left: 5px !important;
@@ -174,9 +176,7 @@
     margin-top: 5px !important;
     margin-bottom: 5px !important;
 }
-.myb5px {
-    margin-bottom: 5px !important;
-}
+.mt0px { margin-top: 0px !important; }
 
 .p5px {
     padding: 5px !important;
@@ -198,6 +198,7 @@
     margin: 0px !important;
     padding: 0px !important;
 }
+.p0px{padding: 0px !important;}
 
 .textCenter {
     text-align: center;
