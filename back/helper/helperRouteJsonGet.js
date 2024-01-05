@@ -8,14 +8,14 @@ class helperRouteJsonDal {
         const router = express.Router();
        
         router.get('/', async (req, res) => {
-            console.log('get ' + name)
+            console.log(name + '.get');
             helperJsonFile.readPath(`./${name}.json`)
                 .then(data => res.send(data));
         });
 
 
         router.get('/:id', async (req, res) => {
-            console.log('get ' + name + '/' + req.params.id)
+            console.log(name + '.getById');
             helperJsonFile.readPath(`./${name}.json`)
                 .then(data => res.send(helperArray.getElementByProperty(data, req.params.id, idProperty)));            
         });

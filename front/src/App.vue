@@ -1,7 +1,7 @@
 
 <template>
   <v-app>
-    <menuBar></menuBar>
+    <menuBar :user="store.user"></menuBar>
     <div style="height:64px;"></div> <!--Place nécessaire pour la MenuBar-->    
     <router-view></router-view>
 
@@ -36,6 +36,7 @@
 </style>
 
 <script>
+import { store } from './data/store.js'
 import menuBar from './components/menuBar';
 import linkButton from './components/linkButton';
 
@@ -47,6 +48,7 @@ export default {
   },
 
   data: () => ({
+    store: store,
     icons: [
         {icon:'mdi-git', url:'https://github.com/boiteflo/majaki'},
         {icon:'mdi-server', url:'https://dashboard.render.com/web/srv-cm8olv0cmk4c73932f3g'},

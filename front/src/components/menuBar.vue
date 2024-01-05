@@ -14,13 +14,12 @@
         >
           <h3 style="position:absolute; top:-15px; letter-spacing:2px">ma jaki</h3>
           <p style="position:absolute; top:2px; left:-25px; color:#D0D0D0">DECHETTERIE</p>
-          <span style="position:absolute; top:5px; left:-17px; font-size:10px">{{version}}</span>
         </v-btn>
       </router-link>
 
       <v-spacer></v-spacer>
       
-      <link-button v-for="link in links" 
+      <link-button v-for="link in getLinks()" 
         :key="'menuBarr' +link.Text" 
         :url="link.Url" 
         :external="link.external" 
@@ -46,7 +45,7 @@
               <p style="margin-top:50px; margin-left:-75px; color:#D0D0D0">DECHETTERIE</p>
             </v-btn>
           </router-link>
-          <div v-for="link in links" 
+          <div v-for="link in getLinks()" 
             :key="'navigationDrawer' +link.Text"
             style="margin-top:30px">
             <link-button  
@@ -67,16 +66,24 @@ import linkButton from './linkButton';
 
   export default {
     name: 'menuBar',
+    props: ["user"],
     components : {linkButton},
     data: () => ({
-        showDrawer: false,
-        links : [
-          {Text: 'DEPOSER DES DECHETS', Icon: 'mdi-dump-truck', Url:'/deposit'},
-          {Text: 'NOUS CONTACTER', Icon: 'mdi-account-group', Url:'/contact'},
-          {Text: 'SE CONNECTER', Icon: 'mdi-login', Url:'/login'},
-        ]
+        showDrawer: false
     }),
     methods:{
+      getLinks(){
+        let result = [ 
+          {Text: 'DEPOSER DES DECHETS', Icon: 'mdi-dump-truck', Url:'/deposit'},
+          {Text: 'NOUS CONTACTER', Icon: 'mdi-account-group', Url:'/contact'}];
+        if(this.user)
+          result = result.concat([
+          {Text: 'SE DECONNECTER', Icon: 'mdi-logout', Url:'/logout'},
+          {Text: this.user.Name.toUpperCase(), Icon: 'mdi-account-circle', Url:'/account'}]);
+        else
+          result.push({Text: 'SE CONNECTER', Icon: 'mdi-login', Url:'/login'});
+        return result;
+      }
     }
   }
 </script>

@@ -28,39 +28,51 @@ const routes = [
     },
     {
         path: '/depositAdd',
-        name: version + ' majaki Contact',
+        name: version + ' majaki Ajout Dépot',
         component: () =>
             import ('../pages/pageDepositAdd.vue')
     },
     {
         path: '/depositEdit',
-        name: version + ' majaki Contact',
+        name: version + ' majaki Modifier Dépot',
         component: () =>
             import ('../pages/pageDepositEdit.vue')
     },
     {
         path: '/depositList',
-        name: version + ' majaki Contact',
+        name: version + ' majaki Liste Dépot',
         component: () =>
             import ('../pages/pageDepositList.vue')
     },
     {
         path: '/depositView',
-        name: version + ' majaki Contact',
+        name: version + ' majaki Voir Dépot',
         component: () =>
             import ('../pages/pageDepositView.vue')
     },
     {
         path: '/login',
-        name: version + ' majaki Contact',
+        name: version + ' majaki Se connecter',
         component: () =>
             import ('../pages/pageLogin.vue')
     },
     {
-        path: '/homeLogged',
-        name: version + ' majaki Contact',
+        path: '/account',
+        name: version + ' majaki Mon compte',
         component: () =>
-            import ('../pages/pageHomeLogged.vue')
+            import ('../pages/pageAccount.vue')
+    },
+    {
+        path: '/logout',
+        name: version + ' majaki Se déconnecter',
+        component: () =>
+            import ('../pages/pageLogout.vue')
+    },
+    {
+        path: '/board',
+        name: version + ' majaki Accueil',
+        component: () =>
+            import ('../pages/pageBoard.vue')
     },
     {
         path: '/*',

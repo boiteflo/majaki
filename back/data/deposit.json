@@ -6,9 +6,9 @@
         "AuthorName":"Calais",
         "AuthorAccountExisting":"false",
 		"DateCreation":"301220231347",
-        "Updates":"301220231347,boiteflo@yopmail.com,CUS|311220231141,com@yopmail.com,COMDT",
-        "Approvals":"301220231347,boiteflo@yopmail.com,CUS|311220231141,com@yopmail.com,COMDT",
-        "ClientEmail":"boiteflo@yopmail.com",
+        "Updates":"301220231347,jean@yopmail.com,CUS|311220231141,dave@yopmail.com,COM",
+        "Approvals":"301220231347,jean@yopmail.com,CUS|311220231141,dave@yopmail.com,COM",
+        "ClientEmail":"jean@yopmail.com",
         "ClientName":"Boite Flo",
         "ClientAddresStreet":"51 rue du Coco",
         "ClientAddresAdditional":"",
@@ -42,7 +42,7 @@
         "WasteListApprovedCom":"BET22,BRI1,TUI4",
         "WasteListApprovedLan":"BET22,TUI4",
         "WasteListApprovedDir":"BET22",
-        "Comments":"311220231347,boiteflo@yopmail.com,CUS,La brique présente des traces de moissisures|301220231141,com@yopmail.com,COMDT,Les briques ne pourront pas être incluse dans ce dépot",
-        "CommentsInternal":"301220231141,com@yopmail.com,COMDT,On ne prends pas ces briques j'ai pas envie de contaminer notre stock.,BRI1"
+        "Comments":"311220231347,jean@yopmail.com,CUS,La brique présente des traces de moissisures|301220231141,dave@yopmail.com,COM,Les briques ne pourront pas être incluse dans ce dépot",
+        "CommentsInternal":"301220231141,dave@yopmail.com,COM,On ne prends pas ces briques j'ai pas envie de contaminer notre stock.,BRI1"
     }
 ]

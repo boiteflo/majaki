@@ -1,10 +1,11 @@
+const cors = require('cors');
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
-const helperRouteJsonGet = require("./helper/helperRouteJsonGet");
 const helperRoute = require("./helper/helperRoute");
 const managerMain = require("./manager/managerMain");
+const managerLogin = require("./manager/managerLogin");
 const managerDeposit = require("./manager/managerDeposit");
+const helperRouteJsonGet = require("./helper/helperRouteJsonGet");
 
 String.prototype.stringify = function(obj) {
     return JSON.stringify(obj, null, "\t");
@@ -36,6 +37,7 @@ app.use(bodyParser.json());
 app.use('/api/waste', helperRouteJsonGet.createDalRoute('back/data/waste', 'Id'));
 app.use('/api/site', helperRouteJsonGet.createDalRoute('back/data/site', 'Id'));
 app.use('/api/deposit', helperRoute.createRoute(new managerDeposit()));
+app.use('/api/login', new managerLogin().createRoute());
 
 app.use(express.static(__dirname + '/public/'));
 app.get(/.*/, (req, res) => res.sendFile(__dirname + '/public/index.html'));
@@ -44,9 +46,6 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     managerMain.refresh();
     console.log(`Server started on port ${port}`);
-    if (process.env.NODE_ENV === 'production') {
-        //setInterval(()=> axios.get('https://mdos.onrender.com/api/data/ranks'), 60000*12);
-    }
 });
 
 

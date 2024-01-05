@@ -1,0 +1,42 @@
+[
+	{
+		"Id": "b49c7489-d795-4158-aa39-9c25496c3a0a",
+		"Mail": "banquartflorent@yopmail.com",
+		"Name": "Florent Banquart",
+		"Password": "098f6bcd4621d373cade4e832627b4f6",
+		"Role": "ADM",
+		"ClientId": ""
+	},
+	{
+		"Id": "b97dff0f-0d16-4c72-9652-53491380d058",
+		"Mail": "dave@yopmail.com",
+		"Name": "Dave Com",
+		"Password": "098f6bcd4621d373cade4e832627b4f6",
+		"Role": "COM",
+		"ClientId": ""
+	},
+	{
+		"Id": "4b9232fa-cc35-4d36-8508-a385118e477e",
+		"Mail": "maria@yopmail.com",
+		"Name": "Maria Ross",
+		"Password": "098f6bcd4621d373cade4e832627b4f6",
+		"Role": "RFR",
+		"ClientId": ""
+	},
+	{
+		"Id": "2a6443a3-f99a-4360-a0aa-fa4a83495d06",
+		"Mail": "erwin@yopmail.com",
+		"Name": "Erwin Smith",
+		"Password": "098f6bcd4621d373cade4e832627b4f6",
+		"Role": "DT",
+		"ClientId": ""
+	},
+	{
+		"Id": "a8617fcc-e0e3-414b-82f9-1bff49dea9be",
+		"Mail": "jean@yopmail.com",
+		"Name": "Jean Blegin",
+		"Password": "098f6bcd4621d373cade4e832627b4f6",
+		"Role": "CUS",
+		"ClientId": "f26f75b0-64d6-47de-a02e-a599fa073d82"
+	}
+]

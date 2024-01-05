@@ -8,7 +8,7 @@
                 :icon="icon()"
                 v-on:click="selectMarker(marker)">
                 <l-tooltip v-if="marker">
-                    <div v-html="marker.label"></div>
+                    <slot :marker="marker"></slot>
                 </l-tooltip>
             </l-marker>
             <l-marker v-if="sidemarker" :lat-lng="getCoord(sidemarker.coord)" :icon="icon()">

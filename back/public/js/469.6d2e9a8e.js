@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkfront"]=self["webpackChunkfront"]||[]).push([[469],{469:function(e,t,n){n.r(t),n.d(t,{default:function(){return p}});var s=function(){var e=this,t=e._self._c;return t("div",{staticClass:"pageTop"},[t("h1",[e._v("Mon Compte "+e._s(e.store.user.Name))])])},u=[],r=(n(7658),n(1120)),o=n(9092),a={name:"pageBoard",data:()=>({store:o.h}),mounted(){o.h.user||r.Z.push("login")},methods:{}},l=a,f=n(1001),h=(0,f.Z)(l,s,u,!1,null,null,null),p=h.exports}}]);
+//# sourceMappingURL=469.6d2e9a8e.js.map
