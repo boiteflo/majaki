@@ -1,9 +1,9 @@
 <template> 
-    <div class="flex flex-align-center m5px">
-    <div class="flex-grow" v-if="$vuetify.breakpoint.width > 800">
-      <img class="w100p" :src="image" alt="Image"  >
+    <div class="flex flex-align-center flex-space-evenly m5px">
+    <div class="flex-grow" style="max-width:800px" v-if="$vuetify.breakpoint.width > 800">
+      <img class="w100p" :src="image" alt="Image"  style="max-height: 450px; object-fit: cover" >
     </div>
-    <div class="flex-grow flex-center">
+    <div class="flex-center">
         <v-card class="m5px" style="min-width: 350px;" elevation="9">
           <v-card-title>{{title}}</v-card-title>
           <v-card-text>

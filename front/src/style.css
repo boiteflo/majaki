@@ -51,9 +51,8 @@
     display: flex;
 }
 
-.flex-align-center {
-    align-items: center;
-}
+.flex-align-center { align-items: center;}
+.flex-space-evenly{ justify-content: space-evenly; }
 
 .flex-line {
     display: flex;
@@ -78,9 +77,6 @@
     justify-content: center;
 }
 
-.text-center {
-    text-align: center !important;
-}
 
 .h100p { height: 100% !important;}
 .h66p { height: 66% !important;}
@@ -337,3 +333,9 @@
   .color3Bg {background:#AFE7EA !important;}
   .color4Bg {background:#A5D6A7 !important;}
   .transparentBg {background:#00000000 !important;}
+
+  .text-center { text-align: center !important; }
+  .text-justify{ text-align: justify;}
+
+  p {text-align: justify;}
+  .v-card__text {text-align: justify;}

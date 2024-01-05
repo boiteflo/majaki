@@ -11,32 +11,33 @@
           </h4>
         </div>
       </v-parallax>
-
-      <div class="separation"  style="text-align:center; margin-right:100px; margin-left:100px">
-        <h1>UNE DECHETTERIE PROPRE</h1>
-        <br>
-        <p>La déchetterie exemplifie notre engagement envers un environnement propre et sain. Immaculée et bien entretenue, notre installation reflète notre dévouement à maintenir des normes élevées en matière de propreté et d'hygiène. Les aires de tri sont organisées de manière méthodique, facilitant la séparation efficace des matériaux recyclables. Des procédures rigoureuses de gestion des déchets assurent non seulement la propreté immédiate du site, mais également la réduction de l'impact environnemental global. En outre, notre équipe dédiée veille à ce que les déchets soient stockés et manipulés avec soin, garantissant ainsi un environnement sûr pour le personnel et les visiteurs. Chez nous, une déchetterie propre va au-delà de l'apparence, c'est une démonstration tangible de notre engagement envers la durabilité et la qualité environnementale.</p>
-      </div>
+      
+      <v-card class="separation p5px" elevation="9"  style="text-align:center; margin-right:100px; margin-left:100px">        
+        <v-card-title>UNE DECHETTERIE PROPRE</v-card-title>
+        <v-card-text>
+          La déchetterie exemplifie notre engagement envers un environnement propre et sain. Immaculée et bien entretenue, notre installation reflète notre dévouement à maintenir des normes élevées en matière de propreté et d'hygiène. Les aires de tri sont organisées de manière méthodique, facilitant la séparation efficace des matériaux recyclables. Des procédures rigoureuses de gestion des déchets assurent non seulement la propreté immédiate du site, mais également la réduction de l'impact environnemental global. En outre, notre équipe dédiée veille à ce que les déchets soient stockés et manipulés avec soin, garantissant ainsi un environnement sûr pour le personnel et les visiteurs. Chez nous, une déchetterie propre va au-delà de l'apparence, c'est une démonstration tangible de notre engagement envers la durabilité et la qualité environnementale.
+        </v-card-text>
+      </v-card>
       
       <v-parallax class="separation" :src="require('../assets/img2.jpg')" height="200">
       </v-parallax>
 
       <div class="flex flex-responsive flex-space-around separation"  style="text-align:center;">
-        <div class="flex-grow m10px">
+        <v-card class="flex-grow m10px p5px">
           <v-icon style="font-size:100px;" class="color1">mdi-recycle</v-icon>
-          <h1>REVALORISER</h1>
-          <p>les matériaux collectés sont triés, recyclés et transformés autant que possible afin de leur donner une nouvelle vie. Cette approche durable réduit la dépendance à l'égard des décharges et minimise l'impact environnemental global.</p>
-        </div>
-        <div class="flex-grow m10px">
+          <v-card-title>REVALORISER</v-card-title>
+          <v-card-text>les matériaux collectés sont triés, recyclés et transformés autant que possible afin de leur donner une nouvelle vie. Cette approche durable réduit la dépendance à l'égard des décharges et minimise l'impact environnemental global.</v-card-text>
+        </v-card>
+        <v-card class="flex-grow m10px p5px">
           <v-icon style="font-size:100px;" class="color1">mdi-home-silo</v-icon>
-          <h1>STOCKER</h1>
-          <p>Les installations sont conçues de manière à garantir que les déchets dangereux ou sensibles sont manipulés, stockés et éliminés conformément aux normes de sécurité les plus strictes, préservant ainsi la santé publique et l'environnement. </p>
-        </div>
-        <div class="flex-grow m10px">
+          <v-card-title>STOCKER</v-card-title>
+          <v-card-text>Les installations sont conçues de manière à garantir que les déchets dangereux ou sensibles sont manipulés, stockés et éliminés conformément aux normes de sécurité les plus strictes, préservant ainsi la santé publique et l'environnement. </v-card-text>
+        </v-card>
+        <v-card class="flex-grow m10px p5px">
           <v-icon style="font-size:100px;" class="color1">mdi-file-certificate</v-icon>
-          <h1>CERTIFIER</h1>
-          <p>Cette certification apporte une assurance aux parties prenantes quant à la conformité aux meilleures pratiques environnementales et à l'engagement envers une gestion responsable des déchets.</p>
-        </div>
+          <v-card-title>CERTIFIER</v-card-title>
+          <v-card-text>Cette certification apporte une assurance aux parties prenantes quant à la conformité aux meilleures pratiques environnementales et à l'engagement envers une gestion responsable des déchets.</v-card-text>
+        </v-card>
       </div>
       
       <div class="flex flex-responsive flex-space-around separation">
@@ -70,21 +71,21 @@
 
       <h1 class="separation" style="text-align:center">DECOUVREZ NOTRE EQUIPE</h1>
       <br>
-      <div class="flex flex-space-around"  style="text-align:center;">
+      <div class="flex flex-space-around text-center">
         <div class="flex-grow m10px">
           <img width="200px" class="borderRadius100" :src="require('../assets/florent.png')" />
           <h3>Responsable Web</h3>
-          <p>Florent Banquart</p>
+          <p class="text-center">Florent Banquart</p>
         </div>
         <div class="flex-grow m10px">
           <img width="200px" class="borderRadius100" :src="require('../assets/maria.jpg')" />
           <h3>Eco Gérante</h3>
-          <p>Maria Ross</p>
+          <p class="text-center">Maria Ross</p>
         </div>
         <div class="flex-grow m10px">
           <img width="200px" class="borderRadius100" :src="require('../assets/erwin.jpg')" />
           <h3>Chef de Carrière</h3>
-          <p>Erwin Smith</p>
+          <p class="text-center">Erwin Smith</p>
         </div>
       </div>
     </div>

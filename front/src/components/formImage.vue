@@ -1,9 +1,9 @@
 <template> 
-    <div class="flex flex-align-center m10px">
-    <div class="flex-grow" v-if="$vuetify.breakpoint.width > 800">
-      <img class="w100p" :src="image" alt="Image"  >
+    <div class="flex m10px" style="justify-content: space-evenly;">
+    <div v-if="$vuetify.breakpoint.width > 800">
+      <img class="w100p" :src="image" alt="Image" style="max-width: 450px; max-height: 450px;"  >
     </div>
-    <div class="flex-grow flex-center">
+    <div class="flex-center">
         <slot>            
         </slot>
     </div>

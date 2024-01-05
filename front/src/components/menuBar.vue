@@ -23,7 +23,9 @@
         :key="'menuBarr' +link.Text" 
         :url="link.Url" 
         :external="link.external" 
-        :text="$vuetify.breakpoint.width >= 1050 ? link.Text : ''" 
+        :text="$vuetify.breakpoint.width >= 970  ? link.Text 
+          : $vuetify.breakpoint.width >= 720  ? link.TextMini
+          : ''" 
         :icon="link.Icon">
       </link-button>
 
@@ -74,16 +76,16 @@ import linkButton from './linkButton';
     methods:{
       getLinks(){
         let result = [ 
-          {Text: 'DEPOSER DES DECHETS', Icon: 'mdi-dump-truck', Url:'/depositAdd'}];
+          {Text: 'DEPOSER DES DECHETS', TextMini:'DEPOSER', Icon: 'mdi-dump-truck', Url:'/depositAdd'}];
         if(this.user)
           result = result.concat([
-            {Text: 'Mes DEPOTS', Icon: 'mdi-format-list-bulleted', Url:'/depositList'},
-            {Text: this.user.Name.toUpperCase(), Icon: 'mdi-account-circle', Url:'/account'},
-            {Text: 'DECONNEXION', Icon: 'mdi-logout', Url:'/logout'},]);
+            {Text: 'Mes DEPOTS', TextMini:'DEPOTS', Icon: 'mdi-format-list-bulleted', Url:'/depositList'},
+            {Text: 'MON COMPTE', TextMini:'COMPTE', Icon: 'mdi-account-circle', Url:'/account'},
+            {Text: 'DECONNEXION', TextMini:'DECO', Icon: 'mdi-logout', Url:'/logout'},]);
         else
           result = result.concat([
-            {Text: 'NOUS CONTACTER', Icon: 'mdi-account-group', Url:'/contact'},
-            {Text: 'SE CONNECTER', Icon: 'mdi-login', Url:'/login'}]);
+            {Text: 'NOUS CONTACTER', TextMini:'CONTACT', Icon: 'mdi-account-group', Url:'/contact'},
+            {Text: 'SE CONNECTER', TextMini:'CONNECT', Icon: 'mdi-login', Url:'/login'}]);
         return result;
       }
     }
